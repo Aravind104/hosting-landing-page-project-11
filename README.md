@@ -7,6 +7,7 @@ I built this project using below `tech stack`
   - Flexbox
   - Grid
   - linear-gradient property
+  - responsiveness using media queries
 
 > Here's the glimpse pic of project
 

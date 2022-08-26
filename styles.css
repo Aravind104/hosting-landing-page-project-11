@@ -11,6 +11,7 @@
 .container{
     background-color: lightcyan;
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 .nav-bar{
@@ -30,7 +31,9 @@
     width: 70%;
     justify-content: flex-end;
 }
-
+.ham-burger{
+    display: none;
+}
 .list-item:first-child{
     font-weight: 600;
 }
@@ -333,4 +336,147 @@
 }
 .Social-Media img{
     margin-left: 1rem;
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        overflow: hidden;
+    }
+    .list-items{
+        display:none;
+    }
+    .nav-bar button{
+        display:none;
+    }
+    .ham-burger{
+        display: flex;
+        height: 40px;
+        color: #4f42c4c7;
+    }
+    .main1{
+        flex-direction: column-reverse;
+    }
+    .main1-left h1{
+        font-size:2rem;
+        text-align: center;
+    }
+    .main1-left p{
+        padding: 1rem 0;
+    }
+    .main1-left{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main2{
+        flex-direction: column;
+        margin: 0;
+        gap: 2rem;
+        margin-left: 4rem;
+    }
+
+    .main2-left img{
+        width: 400px;
+        text-align: center;
+    }
+
+    .main2-right{
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .main2-right h1{
+        font-size: 1.5em;
+    }
+    /* main-3 */
+    .main3{
+        flex-direction: column-reverse;
+        margin: 0;
+        gap: 2rem;
+        margin-left: 1rem;
+    }
+
+    .main3-right img{
+        width: 400px;
+        text-align: center;
+    }
+
+    .main3-left{
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .main3-left h1{
+        font-size: 2rem;
+        line-height:3rem;
+    }
+    /* main-4 */
+    .main4{
+        flex-direction: column;
+        margin:2rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 2rem;
+    }
+    .main4 h1{
+        font-size: 2rem;
+        line-height:2rem;
+        width: 100%;
+    }
+
+    .main4 p{
+        width: 100%;
+    }
+
+    /* main-5 */
+    .main5{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* main6 */
+    .main6{
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    /* main7 */
+    .main7{
+        margin: 2rem;
+    }
+    /* main8 */
+    .main8{
+        margin: 0;
+        gap:0;
+        grid-template-columns:1fr;
+    }
+    /* main9 */
+    .main9{
+        height:100%;
+        width:100%;
+        flex-direction: column;
+    }
+
+    .main9-left{
+        padding: 4rem;
+        
+    }
+    /* main10 */
+    .main10{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
 }
